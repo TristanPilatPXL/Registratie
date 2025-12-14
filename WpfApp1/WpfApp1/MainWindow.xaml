@@ -5,8 +5,47 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Inschrijvingen graduaat programmeren" Height="500" Width="450">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="210"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="350"/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Column="0" Grid.Row="0" Content="Gegevens" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" Margin="10,11,0,0"/>
+        <Label Grid.Column="1" Grid.Row="0" Content="Student" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold" Margin="0,11,110,0"/>
+        <ComboBox Grid.Column="1" Grid.Row="0" Width="120" Height="20" HorizontalAlignment="Right" Margin="0,15,10,0" VerticalAlignment="Top"/>
+
+        <Label Grid.Column="0" Grid.Row="1" Content="Naam:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0"/>
+        <TextBox Grid.Column="0" Grid.Row="1" Width="200" Height="20" HorizontalAlignment="Left" Margin="10,35,0,0" VerticalAlignment="Top"/>
+
+        <Label Grid.Column="0" Grid.Row="1" Content="Geboortedatum:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,70,0,0"/>
+        <DatePicker Grid.Column="0" Grid.Row="1" Width="200" Height="25" HorizontalAlignment="Left" Margin="10,95,0,0" VerticalAlignment="Top"/>
+
+        <Label Grid.Column="0" Grid.Row="1" Content="Geslacht:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,140,0,0"/>
+        <RadioButton Grid.Column="0" Grid.Row="1" Content="M" Margin="10,165,0,0"/>
+        <RadioButton Grid.Column="0" Grid.Row="1" Content="V" Margin="60,165,0,0"/>
+        <RadioButton Grid.Column="0" Grid.Row="1" Content="X" Margin="110,165,0,0"/>
+
+        <Label Grid.Column="0" Grid.Row="1" Content="huidig diploma:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,210,0,0"/>
+        <CheckBox Grid.Column="0" Grid.Row="1" Content="Secundair onderwijs ASO/TSO/BSO" Margin="10,235,0,0"/>
+        <CheckBox Grid.Column="0" Grid.Row="1" Content="Hoger onderwijs (bachelor/graduaat)" Margin="10,260,0,0"/>
+
+
+
+
+
+
+
+
+
+
+
+
 
     </Grid>
 </Window>
