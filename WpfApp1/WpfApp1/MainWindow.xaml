@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="Inschrijvingen graduaat programmeren" Height="500" Width="450">
+        Title="Inschrijvingen graduaat programmeren" Height="600" Width="450">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -13,27 +13,42 @@
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="350"/>
+            <RowDefinition Height="295"/>
+
+            <RowDefinition/>
+
         </Grid.RowDefinitions>
 
-        <Label Grid.Column="0" Grid.Row="0" Content="Gegevens" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" Margin="10,11,0,0"/>
-        <Label Grid.Column="1" Grid.Row="0" Content="Student" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold" Margin="0,11,110,0"/>
+        <Label Grid.Column="0" Grid.Row="0" Content="Gegevens" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" Margin="10,11,0,0" Height="26" Grid.RowSpan="2" Width="64"/>
+        <Label Grid.Column="1" Grid.Row="0" Content="Student" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" Margin="10,11,0,0" Height="26" Grid.RowSpan="2" Width="54"/>
         <ComboBox Grid.Column="1" Grid.Row="0" Width="120" Height="20" HorizontalAlignment="Right" Margin="0,15,10,0" VerticalAlignment="Top"/>
 
-        <Label Grid.Column="0" Grid.Row="1" Content="Naam:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0"/>
+        <Label Grid.Column="0" Grid.Row="1" Content="Naam:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" Height="26" Width="44"/>
         <TextBox Grid.Column="0" Grid.Row="1" Width="200" Height="20" HorizontalAlignment="Left" Margin="10,35,0,0" VerticalAlignment="Top"/>
 
-        <Label Grid.Column="0" Grid.Row="1" Content="Geboortedatum:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,70,0,0"/>
+        <Label Grid.Column="0" Grid.Row="1" Content="Geboortedatum:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,70,0,0" Height="26" Width="97"/>
         <DatePicker Grid.Column="0" Grid.Row="1" Width="200" Height="25" HorizontalAlignment="Left" Margin="10,95,0,0" VerticalAlignment="Top"/>
 
-        <Label Grid.Column="0" Grid.Row="1" Content="Geslacht:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,140,0,0"/>
-        <RadioButton Grid.Column="0" Grid.Row="1" Content="M" Margin="10,165,0,0"/>
-        <RadioButton Grid.Column="0" Grid.Row="1" Content="V" Margin="60,165,0,0"/>
-        <RadioButton Grid.Column="0" Grid.Row="1" Content="X" Margin="110,165,0,0"/>
+        <Label Grid.Column="0" Grid.Row="1" Content="Geslacht:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,140,0,0" Height="26" Width="58"/>
+        <RadioButton Grid.Column="0" Grid.Row="1" Content="M" Margin="10,165,0,100" Grid.RowSpan="2"/>
+        <RadioButton Grid.Column="0" Grid.Row="1" Content="V" Margin="60,165,0,100" Grid.RowSpan="2"/>
+        <RadioButton Grid.Column="0" Grid.Row="1" Content="X" Margin="110,165,0,100" Grid.RowSpan="2"/>
 
-        <Label Grid.Column="0" Grid.Row="1" Content="huidig diploma:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,210,0,0"/>
-        <CheckBox Grid.Column="0" Grid.Row="1" Content="Secundair onderwijs ASO/TSO/BSO" Margin="10,235,0,0"/>
-        <CheckBox Grid.Column="0" Grid.Row="1" Content="Hoger onderwijs (bachelor/graduaat)" Margin="10,260,0,0"/>
+        <Label Grid.Column="0" Grid.Row="1" Content="huidig diploma:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,210,0,0" Height="26" Width="93"/>
+        <CheckBox Grid.Column="0" Grid.Row="1" Content="Secundair onderwijs ASO/TSO/BSO" Margin="10,235,0,100" Grid.RowSpan="2"/>
+        <CheckBox Grid.Column="0" Grid.Row="1" Content="Hoger onderwijs (bachelor/graduaat)" Margin="10,260,0,100" Grid.RowSpan="2"/>
+
+        <Label Grid.Column="0" Grid.Row="2" Content="Olods" HorizontalAlignment="Left" VerticalAlignment="Top" Height="26" Width="Auto" Margin="10,10,0,0"/>
+        <Label Grid.Column="0" Grid.Row="2" Content="Studiepunten:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="26" Width="Auto" Margin="100,10,0,0"/>
+        <Label Grid.Column="0" Grid.Row="2" Content="0" HorizontalAlignment="Right" VerticalAlignment="Top" Height="26" Width="Auto" Margin="100,10,10,0"/>
+        <ListBox Grid.Column="0" x:Name="olodListBox" Grid.Row="2" Width="215" Height="150" HorizontalAlignment="Left" Margin="10,40,0,0" VerticalAlignment="Top"/>
+
+        <Button Grid.Column="0" Grid.Row="2" Content="Inschrijven" Width="75" Height="25" HorizontalAlignment="Left" Margin="10,200,0,0" VerticalAlignment="Top"/>
+
+
+
+
+
 
 
 
