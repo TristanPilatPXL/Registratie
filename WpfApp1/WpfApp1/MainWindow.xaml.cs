@@ -11,8 +11,8 @@ namespace WpfApp1
     public partial class MainWindow : Window
     {
         private int totaalCredits;//staat hier voor te grbuiken in ander methode
-        private string naam = "";        // ← Voeg toe als class field
-        private string sex = "";         // ← Ook handig om te bewaren
+        private string naam = "";        
+        private string sex = "";         
         private string birthdate = "";
 
         public MainWindow()
@@ -56,7 +56,7 @@ namespace WpfApp1
         }
         private void olodListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            int totaalCredits = 0;  // ← Begin op 0! 
+            int totaalCredits = 0;  
 
             // Loop door alle geselecteerde items
             foreach (var item in olodListBox.SelectedItems)
@@ -128,6 +128,8 @@ namespace WpfApp1
 
         private void verwijderen(object sender, RoutedEventArgs e)
         {
+            
+                Student.Items.Remove(Student.SelectedItem);
             
         }
     }

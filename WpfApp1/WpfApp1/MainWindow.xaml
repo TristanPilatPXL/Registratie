@@ -51,21 +51,5 @@
         <Button Grid.Column="1" Content="Verwijderen" Grid.Row="2" Width="75" Height="25" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,10,10,0" Click="verwijderen"/>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </Grid>
 </Window>
